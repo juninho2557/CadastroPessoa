@@ -8,10 +8,41 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.wfghc.cadastrodepessoa.MainActivity">
+    tools:context="com.example.testeeclipse.MainActivity">
+
 
     <TextView
+        android:id="@+id/textView1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
+        style="@style/Txt_Teste"
+        android:text="@string/ola_diogo" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView1"
+        style="@style/Txt_Teste"
+        android:text="@string/hello_world" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView2"
+        style="@style/Txt_Teste"
+        android:text="@string/app_name" />
+
+    <Button
+        android:id="@+id/btnEnviar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_enviar"
+        android:background="@color/bg_action"
+        android:textColor="@color/branco"
+        android:textSize="@dimen/txt_btn"
+        android:onClick="clickBtnEnviar"
+        android:layout_alignParentBottom="true"/>
+
 </RelativeLayout>

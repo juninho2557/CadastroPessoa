@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id="@+id/dash_board"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/app_background"
+    tools:context=".DashBoardActivity">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        card_view:cardCornerRadius="5dp"
+        card_view:contentPadding="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@drawable/borda_1">
+        <Button
+            android:id="@+id/btn_dash_cadastros"
+            style="@style/Btn_dash"
+            android:drawableTop="@drawable/add_user_64"
+            android:onClick="callCadastro"
+            android:text="Cadastro"/>
+
+        <Button
+            android:id="@+id/btn_dash_lista"
+            style="@style/Btn_dash"
+            android:drawableTop="@drawable/group_64"
+            android:onClick="callList"
+            android:text="Listagem"/>
+    </LinearLayout>
+</android.support.v7.widget.CardView>
+
+
+</LinearLayout>
